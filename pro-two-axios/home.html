@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather forecast</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <aside id="left">
+    <h3>页面介绍：使用 axios 网络工具发起 HTTP 请求，访问接口，实现特定天气查询页面</h3>
+  </aside>
+  <main>
+    <div id="input">
+      <section>请输入需要查询的城市：</section>
+      <form onsubmit="return false;">
+        <input type="text" name="city" id="city" placeholder="input here...">
+        <input type="submit" value="search" id="search">
+      </form>
+    </div>
+    <div id="content">展示区
+      <hr>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+  </main>
+  <aside id="right">
+    <h3>案例开发所使用查询接口由高德开放平台提供。</h3>
+    <h3>***后续会基于 vue 框架和 react 框架进行续写，完善整个项目。</h3>
+  </aside>
+  <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
