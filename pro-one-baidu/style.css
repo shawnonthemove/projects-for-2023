@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+  font-size: 12px;
+}
+section[id="start"] {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+section[id="hiddenOne"] {
+  width: 80px;
+  height: 150px;
+  font-size: 13px;
+  position: absolute;
+  right: 66px;
+  top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(195, 194, 194);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+section[id="hiddenOne"] > #more {
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#more > p:hover {
+  color: rgb(63, 63, 252);
+  cursor: pointer;
+}
+section[id="hiddenTwo"] {
+  width: 250px;
+  height: 300px;
+  box-shadow: 0 0 10px rgb(195, 194, 194);
+  position: absolute;
+  left: 180px;
+  top: 50px;
+  border-radius: 10px;
+  font-size: 14px;
+  visibility: hidden;
+}
+#setting {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#setting > #settingItem {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+#setting > #settingItem > .item {
+  width: 26%;
+  height: 25%;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+#setting > #seeMore {
+  color: rgba(22, 20, 20, 0.52);
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+#setting > #seeMore:hover, #setting > #settingItem > .item:hover {
+  color: rgb(63, 63, 252);
+  background-color: rgb(240, 246, 254);
+  cursor: pointer;
+}
+.item > svg {
+  padding: 5px;
+  border-radius: 5px;
+}
+.item:hover svg {
+  box-shadow: 0px 0px 5px rgb(195, 194, 194);
+  background-color: #fff;
+}
+section[id="end"] {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+section > button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+section > button:hover {
+  color: rgb(63, 63, 252);
+}
+button[class~='log'] {
+  color: #fff;
+  background-color: rgba(63, 63, 252, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+button[class~='log']:hover {
+  background-color: rgb(63, 63, 252);
+  color: #fff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main > img {
+  width: 300px;
+}
+main > form {
+  border: 2px solid rgba(118, 118, 118, 0.4);
+  border-radius: 10px;
+  width: 650px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 15px;
+}
+main > form:hover {
+  border: 2px solid rgba(118, 118, 118, 0.8); 
+}
+main > form > input[type="text"] {
+  width: 70%;
+  height: 30px; 
+  line-height: 40px;
+  font-size: 16px;
+  border: 0;
+}
+main > form > input[type="text"]:focus {
+  outline: 0;
+}
+form:has(input[type="text"]:focus) {
+  border: 2px solid rgb(1, 1, 240);
+}
+main > form > svg {
+  opacity: 0.5;
+}
+main > form > svg:hover {
+  fill: rgb(1, 1, 240);
+  opacity: 1;
+  cursor: pointer;
+}
+main > form > input[type="button"] {
+  color: white;
+  font-size: 16px;
+  width: 16%;
+  height: 40px;
+  background-color: rgb(63, 63, 252);
+  outline: 2px solid rgb(63, 63, 252);
+  border: 0;
+  border-radius: 0 10px 10px 0;
+}
+main > form > input[type="button"]:hover {
+  background-color: rgb(1, 1, 240);
+  cursor: pointer;
+}
+main > section[id="hotSearch"] {
+  width: 670px;
+  margin-top: 60px;
+}
+main > section > div[id="headRow"] {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main > section > div[id="headRow"] > p:hover {
+  color: rgb(1, 1, 240);
+  cursor: pointer;
+}
+#hot {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+}
+#search:hover svg {
+  fill: rgb(1, 1, 240);
+}
+main > section > div[id="hotSearchContent"] {
+  width: 100%;
+}
+main > section > div[id="hotSearchContent"] > p {
+  width: 100%;
+  padding-top: 8px;
+}
+section[class="multiGra"] {
+  width: 49%;
+  display: inline-block;
+  position: relative;
+}
+section[class="multiGra"] > svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section[class="multiGra"] > a {
+  text-decoration: none;
+  color: #1b1b1b;
+  margin-left: 28px;
+}
+section[class="multiGra"] > a:hover {
+  color: rgb(1, 1, 240);
+  cursor: pointer;
+  text-decoration: underline 1px rgb(1, 1, 240);
+}
+aside {
+  width: 40px;
+  height: 80px;
+  padding: 2px;
+  background-color: rgba(243, 243, 243, 0.6);
+  border-radius: 80px;
+  position: absolute;
+  right: 20px;
+  bottom: 60px;
+}
+aside > p {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside > p:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px grey;
+}
+aside > p:hover svg {
+  fill: rgb(1, 1, 240);
+}
+footer {
+  width: 86%;
+  margin-left: 7%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgb(201, 199, 199);
+  position: absolute;
+  bottom: 0;
+}
+footer > section {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.fontColor:hover {
+  color: black;
+  cursor: pointer;
+}
+#hiddenThree {
+  width: 280px;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+  visibility: hidden;
+}
+#hiddenThree > #mode {
+  position: absolute;
+  right: -10px;
+  top: 20px;
+  color: #1b1b1b;
+  font-size: 14px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(195, 194, 194);
+  border-radius: 10px;
+}
+#hiddenThree > #code {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(195, 194, 194);
+  border-radius: 10px;
+}
+#hiddenThree > #code > p {
+  width: 54%;
+  height: 50%;
+}
+#hiddenThree > #code > p > .front {
+  color: black;
+  opacity: 0.8;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hiddenThree > #code > p > .end {
+  position: relative;
+  top: 5px;
+  padding-left: 3px;
+  color: black;
+  opacity: 0.6;
+  text-align: center;
+  font-size: 13px;
+}
+footer > #hiddenFour {
+  width: 450px;
+  position: absolute;
+  bottom: 40px;
+  right: -20px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgb(195, 194, 194);
+  border-radius: 10px;
+  color: black;
+  visibility: hidden;
+}
+
+#show1:hover ~ #hiddenTwo {
+  visibility: visible;
+}
+
+#show2:hover ~ #hiddenOne {
+  visibility: visible;
+}
+
+#show3:hover ~ #hiddenThree > #mode {
+  visibility: visible;
+}
+#show4:hover ~ #hiddenThree > #code {
+  visibility: visible;
+}
+
+#show5 {
+  cursor: pointer;
+}
+#show5:hover ~ #hiddenFour {
+  visibility: visible;
+}
+#hiddenFour:hover, #hiddenThree:hover, #hiddenTwo:hover, #hiddenOne:hover {
+  visibility: visible;
+}
