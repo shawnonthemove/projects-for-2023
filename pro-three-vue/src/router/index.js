@@ -6,34 +6,34 @@ const router = createRouter({
     {
       path: '/',
       name: 'homePage',
-      component: () => import('@/views/HomePage.vue')
+      component: () => import('../views/HomePage.vue')
     },
     {
       path: '/waterfall',
-      component: () => import('@/views/Waterfall.vue')
+      component: () => import('../views/Waterfall.vue')
     },
     {
       path: '/recursive',
-      component: () => import('@/views/Recursive.vue')
+      component: () => import('../views/Recursive.vue')
     },
     {
       path: '/dynamic',
-      component: () => import('@/views/Dynamic.vue')
+      component: () => import('../views/Dynamic.vue')
     },
     {
       path: '/dialog',
-      component: () => import('@/views/Dialog.vue')
+      component: () => import('../views/Dialog.vue')
     },
     {
       path: '/async',
-      component: () => import('@/views/Async.vue')
+      component: () => import('../views/Async.vue')
     },
     {
       path: '/keepAlive',
-      component: () => import('@/views/KeepAlive.vue')
+      component: () => import('../views/KeepAlive.vue')
     }, {
       path: '/ins',
-      component: () => import('@/views/Ins.vue')
+      component: () => import('../views/Ins.vue')
     }
   ]
 })
