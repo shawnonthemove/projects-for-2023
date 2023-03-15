@@ -22,3 +22,7 @@
 - axios发起GET请求，设置头部信息content-type，application/x-www-form-urlencoded是浏览器默认的编码格式。对于Get请求，是将参数转换?key=value&key=value格式，连接到url后
 - 根据该api提供的返回数据进行解析，使用对象解构方式将关于特定日期天气信息解析出来，然后在对应的html展示区内进行写入，使用innerHTML属性进行写入，以模板字符串的形式插入天气信息
 - 注意：当前并没有针对input框的输入内容进行过滤，而是根据返回数据的内容进行判断，如果内容为空则无内容显示。为了防止潜入代码攻击，最好是在客户端对传输的内容进行过滤。
+
+## project3：使用 vue3 的实践案例
+
+- **不同小案例的要点详见hellovue文件夹下的README.md**
