@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './projects-for-2023/pro-three-vue/vue3-1/hellovue/',
+  base: '',
   plugins: [vue()],
   resolve: {
     alias: {
