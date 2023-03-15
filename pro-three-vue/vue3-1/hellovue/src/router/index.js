@@ -31,6 +31,9 @@ const router = createRouter({
     {
       path: '/keepAlive',
       component: () => import('@/views/KeepAlive.vue')
+    }, {
+      path: '/ins',
+      component: () => import('@/views/Ins.vue')
     }
   ]
 })
