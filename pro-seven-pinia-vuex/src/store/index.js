@@ -26,7 +26,4 @@ export const useStore = defineStore('BASE', {
       baseName: 'user'
     }
   },
-  getters: {
-    
-  },
 })

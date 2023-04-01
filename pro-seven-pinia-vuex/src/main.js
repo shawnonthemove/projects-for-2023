@@ -6,7 +6,8 @@ const setStorage = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value))
 }
 const getStorage = (key) => {
-  return localStorage.getItem(key) ? JSON.parse(localStorage.getItem(key)) : {}
+  let res = localStorage.getItem(key);
+  return res ? JSON.parse(res) : {}
 }
 
 const piniaPlugin = (user) => {
